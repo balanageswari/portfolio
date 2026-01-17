@@ -237,11 +237,20 @@ body {
   box-shadow: var(--shadow-lg);
 }
 
-.image-frame img {
+.image-box {
+  width: 400px;       /* square size */
+  height: 500px;
+  border: 2px solid #ccc;  /* optional */
+  overflow: hidden;  /* important */
+}
+
+.image-box img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* image fills square */
+  border-radius: 0;  /* makes sure it's NOT circle */
 }
+
 
 /* Section Styles */
 section {
